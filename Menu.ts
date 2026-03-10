@@ -13,6 +13,20 @@ export function main() {
     conta.depositar(5000);
     conta.visualizar();
 
+    const conta2: Conta = new Conta(2, 567, 1, "Kaique", 15000)
+    conta2.visualizar();
+    conta2.sacar(10500);
+    conta2.visualizar();
+    conta2.depositar(5000);
+    conta2.visualizar();
+
+    const conta3: Conta = new Conta(3, 490, 1, "Laura", 20000)
+    conta3.visualizar();
+    conta3.sacar(10500);
+    conta3.visualizar();
+    conta3.depositar(5000);
+    conta3.visualizar();
+
     while (true) {
 
         console.log(colors.bg.black, colors.fg.yellow,
