@@ -1,4 +1,4 @@
-export class Conta {
+export abstract class Conta {
 
     private _numero: number;
     private _agencia: number;
@@ -62,7 +62,7 @@ export class Conta {
         }
 
         this._saldo = this._saldo - valor;
-        return true
+        return true;
     }
 
     public depositar(valor: number): void {
@@ -90,7 +90,7 @@ export class Conta {
         console.log("Tipo da Conta: " + tipo);
         console.log("Titular: " + this._titular);
         console.log("Saldo: " + this._saldo.toFixed(2));
-    
+
     }
 
 }
